@@ -35,9 +35,9 @@ Pour les bouches et les chapeaux, les formes sont trop complexes à générer ma
 
 Du taf de kalitey : je vous ordonne d'aller jeter un oeil !
 
-unicolor-dream
-[ galerie tumblr ](https://unicolor-dream.tumblr.com/)
-[ galerie unicolore ](https://gallery.unicolo.re)
+unicolor-dream :
+* [ galerie tumblr ](https://unicolor-dream.tumblr.com/)
+* [ galerie unicolore ](https://gallery.unicolo.re)
 
 
 

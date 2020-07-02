@@ -37,6 +37,6 @@ For mouths and hats, the shapes are too complex to generate mathematically, so I
 
 From kalitey's job: I order you to go and have a look!
 
-unicolor-dream
-[ tumblr gallery ](https://unicolor-dream.tumblr.com/)
-[ single-colored gallery ](https://gallery.unicolo.re)
+unicolor-dream:
+* [ tumblr gallery ](https://unicolor-dream.tumblr.com/)
+* [ unicolo.re gallery ](https://gallery.unicolo.re)
