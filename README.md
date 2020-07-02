@@ -35,7 +35,7 @@ the `generator.py` file makes a grid of X×Y frogs with a transparent background
 # Art
 For mouths and hats, the shapes are too complex to generate mathematically, so I call upon the work of a friend!
 
-From kalitey's job: I order you to go and have a look!
+Quality job: I order you to go and have a look!
 
 unicolor-dream:
 * [ tumblr gallery ](https://unicolor-dream.tumblr.com/)
