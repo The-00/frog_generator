@@ -2,7 +2,16 @@ from PIL import Image, ImageDraw
 import random as rd
 import glob
 
+###
+#   Class Somthing
+#       init #just the initalisation
+#       get  #the image generation
+###
+
 class Shape:
+    '''
+        generate a shape with the position of other elements
+    '''
     def __init__(self, size, seed=None):
         self.seed = seed
         if self.seed != None : rd.seed(seed)
@@ -67,6 +76,10 @@ class Shape:
         return im2
 
 class Eye:
+    '''
+        Generation of an eye
+        different eye shape possible (9 yet)
+    '''
     def __init__(self, size, model=None, seed=None):
         self.seed = seed
         if self.seed != None : rd.seed(seed)
@@ -160,6 +173,10 @@ class Eye:
         return self.im
 
 class Nose():
+    '''
+        generate a nose
+        different noses possible (2 yet)
+    '''
     def __init__(self, size, seed=None):
         self.seed = seed
         if self.seed != None : rd.seed(seed)
@@ -191,6 +208,11 @@ class Nose():
         return self.im
 
 class Cheek():
+    '''
+        generate a cheek
+        just darken or lighten a circle
+    '''
+
     def __init__(self, size, seed=None):
         self.seed = seed
         if self.seed != None : rd.seed(seed)
@@ -208,6 +230,7 @@ class Cheek():
         return self.im
 
 class Mouth():
+    ''' pick a mouth un mouths/* '''
     def __init__(self, size, seed=None):
         self.seed = seed
         if self.seed != None : rd.seed(seed)
@@ -220,6 +243,7 @@ class Mouth():
         return self.im
 
 class Hat():
+    ''' pick a hat un hats/* '''
     def __init__(self, size, seed=None):
         self.seed = seed
         if self.seed != None : rd.seed(seed)
@@ -237,6 +261,10 @@ class Hat():
 
 
 class Frog():
+    '''
+        Generate the full frog
+    '''
+
     def __init__(self, size=1000, eyes=None, goodeyes=True, seed=None):
         self.size = size
         self.shape = Shape(size, seed=seed)
