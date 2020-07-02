@@ -2,26 +2,23 @@ from frog import Frog
 from PIL import Image
 from time import time
 
-X, Y = 30, 2
+X, Y = 10, 10
 frogsize = 500
 frogs = Image.new("RGBA", (frogsize*X,frogsize*Y), "#0000")
 lfrogs = []
-n = 50
 
 t1 = time()
-k = 0
 for y in range(Y):
     for x in range(X):
-        k+=1
         frog = Frog(goodeyes=True)
 
         frogim = frog.get(frogsize)
         lfrogs.append(frogim)
         frogs.paste( frogim, (x*frogsize, y*frogsize))
 
-        percent = 100*k/(X*Y)
+        percent = round(100*k/(X*Y), 2)
         naffi = int(percent/(100/n))
-        print("[", "#"*naffi, " "*(n-naffi),"]", str(percent)+"%     ", end="\r")
+        print("[", "#"*naffi, " "*(n-naffi),"]", str(percent)+"%      ", end="\r")
 print("[", "#"*n,"]", "100%   ")
 
 t2 = time()
