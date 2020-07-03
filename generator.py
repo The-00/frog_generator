@@ -2,14 +2,17 @@ from frog import Frog
 from PIL import Image
 from time import time
 
-X, Y = 10, 10
+X, Y = 10, 5
 frogsize = 500
 frogs = Image.new("RGBA", (frogsize*X,frogsize*Y), "#0000")
 lfrogs = []
+n = 50
 
 t1 = time()
+k = 0
 for y in range(Y):
     for x in range(X):
+        k+=1
         frog = Frog(goodeyes=True)
 
         frogim = frog.get(frogsize)
