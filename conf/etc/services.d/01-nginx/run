@@ -1,0 +1,6 @@
+#!/bin/sh
+NAME="NGINX"
+COMMAND="nginx -g 'daemon off;'"
+WAIT="/tmp/nginx"
+
+exec service-handler "$NAME" "$COMMAND" 

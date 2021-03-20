@@ -1,0 +1,9 @@
+#!/usr/bin/with-contenv ash
+
+chown nginx:nginx /var/www/api -R
+mkdir /var/log/frog
+
+echo 0 > /tmp/nginx
+echo 0 > /tmp/php-fpm
+
+
