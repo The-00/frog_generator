@@ -1,0 +1,6 @@
+#!/bin/sh
+NAME="LOGS" 
+COMMAND="tail -f /var/log/frog/*" 
+WAIT="/tmp/logs"
+
+exec service-handler "$NAME" "$COMMAND" 

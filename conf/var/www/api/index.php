@@ -12,7 +12,7 @@ function getIp(){
 
 exec("python3 /frog/generator.py 2>&1", $output);
 $log  = "User: ".getIp().' - '.date("F j, Y, g:i a").PHP_EOL;
-file_put_contents('/var/log/frog/log_'.date("d_m_Y").'.log', $log, FILE_APPEND);
+file_put_contents('/var/log/frog/access.log', $log, FILE_APPEND);
 
 $type = 'image/png';
 header('Content-Type:'.$type);
